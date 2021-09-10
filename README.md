@@ -17,7 +17,7 @@ Create optimum layout of desktop view and mobile view
 ### Links
 
 - Solution URL: [The code solution](https://github.com/JeremyWarui/StatsPreviewCardChallenge)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://stats-preview-card-challenge-sandy.vercel.app/)
 
 ## My process
 
