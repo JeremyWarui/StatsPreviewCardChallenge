@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* colors */
+  /* primary */
+  --veryDarkBlue: hsl(233, 47%, 7%);
+  --cardBackground: hsl(244, 38%, 16%);
+  --softViolet: hsl(277, 64%, 61%);
+
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+  --alphaWhite: hsla(0, 0%, 100%, 0.75);
+  --statsHeading: hsla(0, 0%, 100%, 0.6);
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--white);
+  box-sizing: border-box;
+}
+
+/*  */
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--veryDarkBlue);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.card {
+  margin: 5em auto;
+  border-radius: 0.8em;
+  width: 90vw;
+  background-color: var(--cardBackground);
+  display: grid;
+  grid: minmax(0.5fr, auto) minmax(300px, 0.5fr) / 1fr;
+}
+
+/* on tablet */
+@media screen and (min-width: 800px) {
+  .card {
+    grid: 1fr 1fr / 1fr;
+  }
+}
+
+/* on desktop */
+@media screen and (min-width: 800px) {
+  .card {
+    grid: 1fr / 1fr 1fr;
+    max-width: 100ch;
+  }
+
+  .image img {
+    min-height: 25em;
+  }
+}
+
+.image {
+  position: relative;
+}
+
+.image img,
+.image-filter,
+.card-image {
+  border-radius: 0.8em 0.8em 0 0;
+}
+
+/* on desktop */
+@media screen and (min-width: 800px) {
+  .image img,
+  .image-filter,
+  .card-image {
+    border-radius: 0 0.8em 0.8em 0;
+  }
+}
+.image-filter {
+  position: absolute;
+  background-color: hsla(300, 81%, 16%, 0.534);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.card-body {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* on desktop */
+@media screen and (min-width: 800px) {
+  .card-body {
+    order: 0;
+    padding: 3.5em;
+    justify-content: space-between;
+  }
+
+  .card-image {
+    order: 1;
+  }
+}
+
+.card-title,
+.stats-number {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.card-title span {
+  color: var(--softViolet);
+}
+
+.card-text {
+  color: var(--alphaWhite);
+  line-height: 1.5;
+  padding-top: 2em;
+}
+
+.stats-container {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.stats-number {
+  font-size: 1.6em;
+}
+
+.stats-text {
+  color: var(--statsHeading);
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+/* on desktop */
+@media screen and (min-width: 750px) {
+  .card-body {
+    text-align: left;
+  }
+  .stats-container {
+    flex-direction: row;
+    padding-right: 2em;
+  }
+
+  .card-text {
+    padding-right: 4em;
+  }
+
+  .stats {
+    margin-right: 2em;
+  }
+  .stats-number {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+  }
+  .stats-text {
+    font-size: 0.8em;
+  }
+}
+
+footer {
+  padding: 2em;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
