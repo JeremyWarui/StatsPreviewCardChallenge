@@ -10,13 +10,13 @@ Create optimum layout of desktop view and mobile view
 
 ### Screenshot
 
-![Desktop View](./screenshots/desktopview.jpg)
+![Desktop View](./screenshots/desktopview.png)
 
-![Mobile View](./screenshots/mobileview.jpg)
+![Mobile View](./screenshots/mobileview.png)
 
 ### Links
 
-- Solution URL: [The code solution](https://your-solution-url.com)
+- Solution URL: [The code solution](https://github.com/JeremyWarui/StatsPreviewCardChallenge)
 - Live Site URL: [Live site](https://your-live-site-url.com)
 
 ## My process
